@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinTwin | Your Skin, Your Story</title>
+  <meta name="description" content="A personalized skincare routine planner built around your skin type, concerns and budget.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">S</span>
+      <span>SkinTwin<span class="brand-dot">.</span><small>YOUR SKIN, YOUR STORY</small></span>
+    </a>
+    <nav>
+      <a href="#how-it-works">How it works</a>
+      <a href="#routine">My routine</a>
+      <a href="#progress">Progress</a>
+    </nav>
+    <a class="top-cta" href="#profile">Create my routine ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> YOUR PERSONAL SKINCARE COMPANION</span>
+        <h1>Get to know your skin.<br><em>Fall in love with it.</em></h1>
+        <p>Skincare shouldn't be complicated. Build a simple routine around your skin type, your concerns and your budget.</p>
+        <a class="primary-btn" href="#profile">Discover my routine <span>↗</span></a>
+        <div class="hero-note">
+          <span class="note-icon">✳</span>
+          <span>Simple steps. Thoughtful choices.<br><strong>A routine that feels like you.</strong></span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-center">
+          <div class="face-illustration">
+            <div class="hair"></div>
+            <div class="face">
+              <div class="eyebrows"><i></i><i></i></div>
+              <div class="eyes"><i></i><i></i></div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+              <div class="cheek cheek-left"></div>
+              <div class="cheek cheek-right"></div>
+            </div>
+          </div>
+        </div>
+        <span class="float-tag tag-top">✦ Skin first, always</span>
+        <span class="float-tag tag-bottom">♡ Your routine, reimagined</span>
+        <span class="sparkle sparkle-one">✧</span>
+        <span class="sparkle sparkle-two">✳</span>
+      </div>
+    </section>
+
+    <section class="benefits" id="how-it-works">
+      <div class="benefit"><span>01</span><div><strong>Know your skin</strong><p>Start with your skin type and goals.</p></div></div>
+      <div class="benefit"><span>02</span><div><strong>Keep it personal</strong><p>Get suggestions based on your answers.</p></div></div>
+      <div class="benefit"><span>03</span><div><strong>Build consistency</strong><p>Track the routine you follow.</p></div></div>
+    </section>
+
+    <section class="planner-section" id="profile">
+      <div class="section-heading">
+        <span class="eyebrow">LET'S START WITH YOU</span>
+        <h2>Your skin has a story.<br><em>Let's listen to it.</em></h2>
+        <p>Tell us a little about yourself to create your starter routine.</p>
+      </div>
+
+      <div class="planner-grid">
+        <form id="profileForm" class="profile-card">
+          <div class="card-heading">
+            <span class="step-number">01</span>
+            <div><h3>Your skin profile</h3><p>A few little details make a difference.</p></div>
+          </div>
+
+          <label for="name">What should we call you?</label>
+          <input id="name" name="name" type="text" placeholder="Your name" maxlength="50" required>
+
+          <label for="skinType">How would you describe your skin?</label>
+          <select id="skinType" name="skinType" required>
+            <option value="">Choose your skin type</option>
+            <option value="Oily">Oily</option>
+            <option value="Dry">Dry</option>
+            <option value="Combination">Combination</option>
+            <option value="Normal">Normal</option>
+            <option value="Sensitive">Sensitive</option>
+          </select>
+
+          <label for="concern">What's your main skin concern?</label>
+          <select id="concern" name="concern" required>
+            <option value="">Choose your main concern</option>
+            <option value="Acne and bumps">Acne and bumps</option>
+            <option value="Dryness">Dryness</option>
+            <option value="Uneven skin tone">Uneven skin tone</option>
+            <option value="Dullness">Dullness</option>
+            <option value="Sensitivity">Sensitivity</option>
+          </select>
+
+          <label for="budget">Monthly skincare budget</label>
+          <select id="budget" name="budget" required>
+            <option value="">Choose your budget</option>
+            <option value="500">Under ₹500</option>
+            <option value="1000">₹500–₹1,000</option>
+            <option value="1500">₹1,000–₹1,500</option>
+            <option value="2500">₹1,500+</option>
+          </select>
+
+          <button class="primary-btn full-btn" type="submit">Create my routine <span>↗</span></button>
+          <p class="privacy-note">♡ Your answers stay in this browser for this demo.</p>
+        </form>
+
+        <div class="preview-card">
+          <span class="preview-label">A LITTLE PREVIEW</span>
+          <div class="preview-icon">✿</div>
+          <h3>Your skin deserves<br><em>a little understanding.</em></h3>
+          <p>We'll use your answers to suggest a simple morning and evening routine.</p>
+          <div class="preview-points">
+            <div><span>✓</span> Skin-type-based suggestions</div>
+            <div><span>✓</span> A focus for your main concern</div>
+            <div><span>✓</span> Budget-conscious guidance</div>
+          </div>
+          <div class="preview-bottom">MADE FOR YOU, NOT EVERYONE.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="routine-section hidden" id="routine" aria-live="polite">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR SKINTWIN STARTER PLAN</span>
+        <h2 id="welcomeHeading">Your routine, <em>your way.</em></h2>
+        <p>Here is a simple starting point based on the details you shared.</p>
+      </div>
+
+      <div class="routine-summary">
+        <div><span class="summary-label">SKIN TYPE</span><strong id="resultSkin">—</strong></div>
+        <div><span class="summary-label">MAIN CONCERN</span><strong id="resultConcern">—</strong></div>
+        <div><span class="summary-label">MONTHLY BUDGET</span><strong id="resultBudget">—</strong></div>
+      </div>
+
+      <div class="routine-columns">
+        <article class="routine-card">
+          <span class="routine-symbol">☀</span>
+          <h3>Good morning, glow.</h3>
+          <p class="routine-subtitle">Your AM routine</p>
+          <ol id="morningList"></ol>
+        </article>
+        <article class="routine-card">
+          <span class="routine-symbol">☾</span>
+          <h3>Slow down, unwind.</h3>
+          <p class="routine-subtitle">Your PM routine</p>
+          <ol id="eveningList"></ol>
+        </article>
+      </div>
+
+      <article class="insight-card">
+        <span class="insight-icon">✦</span>
+        <div><span class="eyebrow">YOUR SKIN NOTE</span><h3>A little focus goes a long way.</h3><p id="skinNote"></p></div>
+      </article>
+
+      <div class="routine-actions">
+        <button class="primary-btn" id="saveRoutine" type="button">Save my routine ♡</button>
+        <button class="secondary-btn" id="editProfile" type="button">Edit my answers</button>
+      </div>
+      <p id="saveMessage" class="save-message" aria-live="polite"></p>
+    </section>
+
+    <section class="progress-section" id="progress">
+      <div class="section-heading">
+        <span class="eyebrow">SMALL STEPS COUNT</span>
+        <h2>Consistency over <em>perfection.</em></h2>
+        <p>Tick off the basics you complete today. Your progress stays on this device.</p>
+      </div>
+      <div class="progress-card">
+        <div class="progress-top"><div><h3>Today's little wins</h3><p id="progressLabel">0 of 3 completed</p></div><span class="progress-flower">✿</span></div>
+        <div class="progress-track"><div id="progressBar" class="progress-fill"></div></div>
+        <label class="check-row"><input type="checkbox" class="habit-check" value="cleanse"><span class="custom-check">✓</span><span><strong>Gentle cleanse</strong><small>Start with a fresh face.</small></span></label>
+        <label class="check-row"><input type="checkbox" class="habit-check" value="moisturize"><span class="custom-check">✓</span><span><strong>Moisturize</strong><small>Give your skin some care.</small></span></label>
+        <label class="check-row"><input type="checkbox" class="habit-check" value="sunscreen"><span class="custom-check">✓</span><span><strong>Apply sunscreen</strong><small>A morning habit worth keeping.</small></span></label>
+      </div>
+    </section>
+
+    <section class="disclaimer">
+      <span>♡</span><p><strong>A gentle reminder:</strong> SkinTwin is an educational prototype, not a medical tool. Skin needs vary, and these general suggestions cannot diagnose skin conditions. Patch-test new products, stop using anything that irritates your skin, and consult a dermatologist for persistent or severe concerns.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-icon">S</span><span>SkinTwin<span class="brand-dot">.</span><small>YOUR SKIN, YOUR STORY</small></span></a>
+    <p>Made with care. Designed for your skin journey.</p>
+    <a href="#profile">Back to the top ↑</a>
+  </footer>
+</body>
+</html>
