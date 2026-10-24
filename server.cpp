@@ -168,12 +168,14 @@ int main() {
     cout << "API address: http://localhost:8080\n";
     cout << "Keep this terminal open while testing.\n";
     cout << "Press Ctrl+C to stop the server.\n\n";
+const char* port_env = std::getenv("PORT");
+int port = port_env ? std::stoi(port_env) : 8080;
 
-    if (!server.listen("127.0.0.1", 8080)) {
-        cerr << "Could not start the server on port 8080.\n";
-        cerr << "Check whether another application is using it.\n";
-        return 1;
-    }
+if (!server.listen("0.0.0.0", port)) {
+    cerr << "Could not start the server on port "
+         << port << ".\n";
+    return 1;
+}
 
     return 0;
 }
