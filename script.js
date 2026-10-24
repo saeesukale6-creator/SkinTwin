@@ -126,7 +126,7 @@ profileForm.addEventListener("submit", async event => {
       budget: String(profile.budget)
     });
 
-    const response = await fetch("http://localhost:8080/recommend", {
+    const response = await fetch("https://skintwin.onrender.com/recommend", {
       method: "POST",
       body: formData
     });
